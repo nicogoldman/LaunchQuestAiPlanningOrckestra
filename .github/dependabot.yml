@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # Mantener actualizadas las dependencias de npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"] # Ignorar major updates automáticamente para evitar breaking changes

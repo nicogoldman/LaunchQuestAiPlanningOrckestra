@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-meli-yellow: #ffe600;
+  --color-meli-bg: #ebebeb;
+  --color-meli-blue: #3483fa;
+  --color-meli-blue-hover: #2968c8;
+  --color-meli-green: #00a650;
+  --color-meli-text: #333333;
+  --color-meli-muted: #666666;
+  --color-meli-card: #ffffff;
+  --color-meli-border: #e6e6e6;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-meli-bg text-meli-text font-sans;
+  }
+}
+
+@layer components {
+  .meli-card {
+    @apply bg-meli-card rounded-lg shadow-sm border border-meli-border p-4;
+  }
+  
+  .meli-button-primary {
+    @apply bg-meli-blue hover:bg-meli-blue-hover text-white font-semibold py-2 px-4 rounded transition-colors;
+  }
+
+  .meli-button-secondary {
+    @apply bg-white hover:bg-gray-50 text-meli-blue font-semibold py-2 px-4 rounded border border-meli-border transition-colors;
+  }
+}

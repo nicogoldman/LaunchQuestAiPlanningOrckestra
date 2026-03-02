@@ -1,0 +1,16 @@
+{
+  "name": "Launch Quest AI",
+  "short_name": "LaunchQuest",
+  "description": "Orquestador de agentes IA gamificado",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ebebeb",
+  "theme_color": "#ffe600",
+  "icons": [
+    {
+      "src": "https://ais-dev-egucx6ehpuv57evovxnd7z-287364182687.us-east1.run.app/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
