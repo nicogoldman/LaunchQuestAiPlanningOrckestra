@@ -44,7 +44,10 @@ describe("API Endpoints", () => {
 
     expect(res.status).toBe(200);
     expect(res.body).toEqual(mockPlan);
-    expect(aiService.generatePlan).toHaveBeenCalledWith("Build a spaceship");
+    expect(aiService.generatePlan).toHaveBeenCalledWith("Build a spaceship", {
+      model: undefined,
+      apiKeys: undefined
+    });
   });
 
   it("POST /api/plan should return 500 if AI service fails", async () => {
